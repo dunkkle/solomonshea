@@ -1,0 +1,85 @@
+
+body {
+	height: 95vh;
+	font-family: 'Rubik', Sans-Serif;
+    font-size: 15px;
+	color: #444444;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Old Standard TT', Serif;
+    font-size: 2.4em;
+    color: #333333;
+}
+
+
+
+.wrapper {
+
+	
+}
+
+.section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+        
+
+}
+
+    #section1 {
+        background-image: url("/assets/noel_duncan-289_websize.jpg");
+        background-size: cover;
+        align-items: left;
+        /*justify-content: space-between;*/
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow: visible;
+
+    }
+
+    #our-story {
+        background: white;
+    }
+
+    #section2 {
+        background-image: url("/assets/noel_duncan-511_websize.jpg");
+        background-size: cover;
+    }
+
+    #section3{
+       background-image: url("/assets/noel_duncan-183_websize.jpg");
+        background-size: cover;
+    }
+
+    #section4{
+        background-image: url("/assets/noel_duncan-334.jpg");
+        background-size: cover;
+    }
+
+.box {
+    width: 35%;
+    max-width: 500px;
+	padding: 20px 10px 20px 10px;
+    flex-direction: column;
+    align-self: left;
+    vertical-align: center;
+    display: flex;
+    justify-content: left;
+    background-color: white;
+}
+
+
+.box div {
+	padding: 0 20px 0 0;
+    display: flex;
+    align-self: center;
+}
+
+.box a {
+    font-size: 1.1em;
+    color: #f2f2f2;
+    text-decoration: none;
+
+}

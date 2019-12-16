@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<!-- Makes this work on mobile devices without being super zoomed out -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>solomonshea.com</title>
+
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/slippry.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i|Proza+Libre&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/slippry.css">
+</head>
+
+
+<body>
+
+<div class="wrapper">
+
+	<div class="section" id="section1">
+	
+		<div id="logo" class="box">
+			<h1>N&D</h1>
+			<p>Dear friends and family, </p>
+			<p>It's been a big year for us! We're so grateful for your love and support, and we can't wait to celebrate with you on February 8th. </p>
+
+			<p>Love, Noel and Duncan</p>
+			<a href="#section4">RSVP & Registry > </a>
+			
+
+		</div>
+
+		
+	</div>
+
+
+	<div class="section" id="our-story">
+		
+		<div class="story">
+			<h2>our story</h2>
+		</div>
+		
+		<!-- <div class="gallery">
+			
+			<ul id="slippry-demo">
+			  <li>
+			    <a href="#slide1"><img src="/img/noel_duncan-511_websize.jpg" alt="Welcome to Slippry!"></a>
+			  </li>
+			  <li>
+			    <a href="#slide2"><img src="/img/noel_duncan-86_websize.jpg"  alt="This is an awesome jQuery slider plugin."></a>
+			  </li>
+			  <li>
+			    <a href="#slide3"><img src="/img/noel_duncan-498_websize.jpg" alt="Check it out, you are going to <span class='red'>♥</span> it :)"></a>
+			  </li>
+			</ul>
+
+		</div>
+ -->
+
+	</div>
+
+	<div class="section" id="section2">
+		
+	<h2>photo Gallery?</h2>
+
+	<div class="box">
+	
+	</div>
+
+	
+
+	</div>
+
+
+	<div class="section" id="section3">
+		
+	
+		<div class="box map">
+			<img src="/img/roblar.png" width="150px">
+
+			<p>We invite you to join us for a casual lunch at Roblar Winery in Santa Ynez. </p>
+		</div>
+
+		<div class="box">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.228755178208!2d-120.09830624829598!3d34.648925393399416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e955b1306f8a51%3A0xfb7fc78c8c5710ae!2sRoblar+Winery!5e0!3m2!1sen!2sus!4v1514301800318" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+		</div>
+		
+
+	</div>
+
+
+	<div class="section" id="section4">
+		
+	<h2>Contact & RSVP & REGISTRY</h2>
+	
+	
+
+	</div>
+	
+	
+<!-- End Wrapper -->
+</div> 
+
+<div>
+	
+
+</div>
+
+<script type="text/javascript">
+	
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+
+ <script type="text/javascript">
+
+
+
+ 	jQuery('#slippry-demo').slippry({
+ 	  // general elements & wrapper
+ 	  slippryWrapper: '<div class="sy-slides-crop pictures-slider" />', // wrapper to wrap everything, including pager
+
+ 	  // options
+ 	  adaptiveHeight: false, // height of the sliders adapts to current slide
+ 	  captions: false, // Position: overlay, below, custom, false
+
+ 	  // pager
+ 	  pager: false,
+ 	  
+ 	  // controls
+ 	  controls: false,
+ 	  autoHover: false,
+
+ 	  // transitions
+ 	  transition: 'kenburns', // fade, horizontal, kenburns, false
+ 	  kenZoom: 140,
+ 	  speed: 3000 // time the transition takes (ms)
+ 	});
+
+ </script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+
+body {
+	height: 95vh;
+	font-family: 'Proza Libre', sans-serif;
+    font-size: 14px;
+	color: #444444;
+    margin: 0;
+}
+
+h1,h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #333333;
+}
+
+h1 {
+     font-size: 3em;
+     line-height: 1.3em;
+     margin: 5px;
+     color: #555555;
+}
+
+h2 {
+    font-size: 2.3em;
+}
+
+a {
+    border: 1px solid black;
+    padding: 10px 5px 10px 5px;
+    text-decoration: none;
+    color: #222222;
+    text-align: center;
+}
+
+a:hover {
+    color: orange;
+    border: 1px solid orange;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+}
+
+.header a {
+    display: flex;
+    flex-direction: row;
+    color: #333333;
+}
+
+.wrapper {
+
+	
+}
+
+.section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+    #section1 {
+        background-image: url("/img/noel_duncan-289_websize.jpg");
+    }
+
+    #our-story {
+        background: white;
+        flex-direction: row;
+    }
+
+        .story {
+            display: flex;
+            width: 50%;
+            height: 100%;
+        }
+
+        .gallery {
+
+
+        }
+
+    #section2 {
+        background-image: url("/img/noel_duncan-511_websize.jpg");
+    }
+
+    #section3{
+       background-image: url("/img/noel_duncan-183_websize.jpg");
+       justify-content: space-around;
+    }
+
+    #section4{
+        background-image: url("/img/noel_duncan-334.jpg");
+    }
+
+
+
+.box {
+    background-color: white;
+    max-width: 300px;
+	padding: 30px 20px 30px 20px;
+    flex-direction: column;
+    align-self: left;
+    vertical-align: center;
+    display: flex;
+    justify-content: left;
+    
+}
+
+
+.box div {
+	padding: 0 20px 0 0;
+    display: flex;
+    align-self: center;
+}
+
+.
