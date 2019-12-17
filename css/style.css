@@ -1,60 +1,75 @@
 
+/* CSS Resets and general stuff*/
+
 body {
 	height: 95vh;
 	font-family: 'Proza Libre', sans-serif;
     font-size: 14px;
-	color: #444444;
+	color: #555555;
     margin: 0;
 }
 
-h1,h2 {
+h1,h2, h3 {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 300;
     font-style: italic;
     color: #333333;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 h1 {
      font-size: 3em;
      line-height: 1.3em;
-     margin: 5px;
-     color: #555555;
+     color: #575757;
+    
 }
 
 h2 {
     font-size: 2.3em;
 }
 
-a {
-    border: 1px solid black;
-    padding: 10px 5px 10px 5px;
+h3 {
+    font-size: 1.8em;
+}
+
+p {
+    margin-top: 5px;
+}
+
+hr {
+    border-top: 1px solid black;
+    width: 90%;
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.button {
+    border: 1px solid #B2C7D6;
+    padding: 5px 3px 5px 3px;
+    background: #628fb0;
     text-decoration: none;
-    color: #222222;
+    color: white;
     text-align: center;
+    width: 100px;
+    cursor: pointer;
+    font-size: 12px;
+    font-family:'Proza Libre', sans-serif;
 }
 
-a:hover {
-    color: orange;
-    border: 1px solid orange;
+.button:hover {
+  
+    background: #42779c;
+   
 }
 
-.header {
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 40px;
-    text-align: center;
-    background-color: white;
-    width: 100%;
-}
 
-.header a {
-    display: flex;
-    flex-direction: row;
-    color: #333333;
-}
+/* Page Sections and general layout */
 
 .wrapper {
 
@@ -62,7 +77,7 @@ a:hover {
 }
 
 .section {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     background-size: cover;
@@ -73,6 +88,8 @@ a:hover {
 
     #section1 {
         background-image: url("/img/noel_duncan-289_websize.jpg");
+        background-position: center;
+        background-attachment: fixed;
     }
 
     #our-story {
@@ -88,7 +105,6 @@ a:hover {
 
         .gallery {
 
-
         }
 
     #section2 {
@@ -96,27 +112,48 @@ a:hover {
     }
 
     #section3{
-       background-image: url("/img/noel_duncan-183_websize.jpg");
-       justify-content: space-around;
+       /*background-image: url("/img/noel_duncan-183_websize.jpg");*/
+       flex-direction: row;
+       justify-content: center;
     }
 
-    #section4{
+        .center-box {
+            text-align: center;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-self: center;
+
+         }
+
+         .center-box img {
+            align-self: center;
+         }
+
+        
+
+    #section4 {
         background-image: url("/img/noel_duncan-334.jpg");
+        background-attachment: fixed;
     }
 
 
 
 .box {
     background-color: white;
-    max-width: 300px;
+    width: 33%;
 	padding: 30px 20px 30px 20px;
     flex-direction: column;
     align-self: left;
     vertical-align: center;
     display: flex;
     justify-content: left;
+    margin-left: 5%;
     
 }
+
+
 
 
 .box div {
@@ -125,4 +162,64 @@ a:hover {
     align-self: center;
 }
 
-.
+
+
+/* Form Stuff */
+
+input[type="text"] {
+    border: none;
+    border-bottom: 1px solid;
+    border-color: #B2C7D6;
+    padding: 2px;
+    margin-bottom: 10px;
+    width: 70%;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 12px;}
+
+
+input:focus {
+    outline: none;
+    border-bottom: 1px solid #628fb0;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+
+input[type="radio"] {
+    display: block;
+}
+
+textarea {
+    border: none;
+    border-bottom: 1px solid;
+    border-color: #B2C7D6;
+    padding: 2px;
+    margin-bottom: 10px;
+    width: 70%;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 12px;}
+
+
+textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #628fb0;
+}
+
+textarea:focus::placeholder {
+    color: transparent;
+}
+
+
+
+ @media only screen and (max-width:768px) {
+
+    .center-box {
+        width: 85%;
+    }
+
+    .box {
+        width: 85%;
+    }
+}

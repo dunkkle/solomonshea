@@ -24,13 +24,17 @@
 
 	<div class="section" id="section1">
 	
-		<div id="logo" class="box">
+		<div class="box left">
 			<h1>N&D</h1>
 			<p>Dear friends and family, </p>
-			<p>It's been a big year for us! We're so grateful for your love and support, and we can't wait to celebrate with you on February 8th. </p>
+			<p>It's been a big year for us! We got married on October 10th, and we're happily expecting our son to be born in March 2020. We're so grateful for your love and support, and we can't wait to celebrate with you on February 8th. </p>
 
-			<p>Love, Noel and Duncan</p>
-			<a href="#section4">RSVP & Registry > </a>
+			<p>Love, <br>Noel and Duncan</p>
+
+			<hr>
+			<h3>RSVP & Registry</h3>
+			<p>Please RSVP <a href="#section4">here</a> by January 20th. </p>
+			<!-- <a class="button" href="#section4">RSVP & Registry > </a> -->
 			
 
 		</div>
@@ -39,13 +43,13 @@
 	</div>
 
 
-	<div class="section" id="our-story">
+	<!-- <div class="section hidden" id="our-story">
 		
 		<div class="story">
 			<h2>our story</h2>
 		</div>
 		
-		<!-- <div class="gallery">
+		 <div class="gallery">
 			
 			<ul id="slippry-demo">
 			  <li>
@@ -60,109 +64,105 @@
 			</ul>
 
 		</div>
- -->
+ 		
 
-	</div>
+	</div> -->
 
-	<div class="section" id="section2">
+	<!-- <div class="section" id="section2">
 		
-	<h2>photo Gallery?</h2>
+		<h2>photo Gallery?</h2>
 
-	<div class="box">
-	
-	</div>
-
-	
-
-	</div>
+	</div> -->
 
 
 	<div class="section" id="section3">
 		
 	
-		<div class="box map">
+		<div class="center-box">
 			<img src="/img/roblar.png" width="150px">
+			&nbsp;
+			<p>If you're viewing this website, you already received our invitation! We can't wait to see you at <a href="https://www.google.com/maps/dir/34.4342528,-119.7080576/roblar+winery+santa+ynez/@34.5393005,-120.1845265,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x80e955b1306f8a51:0xfb7fc78c8c5710ae!2m2!1d-120.096078!2d34.649">Roblar Winery</a> in Santa Ynez on Saturday, February 8th, from 12-4pm. </p>
 
-			<p>We invite you to join us for a casual lunch at Roblar Winery in Santa Ynez. </p>
+			<h3>Driving & Parking</h3>
+			<p>From Santa Barbara, your GPS will probably route you over the mountain via highway 154. We recommend taking the 101 up the coast and coming through Solvang instead. It's a longer drive, but very scenic and a bit safer!
+			<br>
+			Parking will be provided at Roblar.
+			</p>
+			
+			<h3>Attire</h3>
+			<p>Please wear comfortable clothing suitable for an outdoor event. Think fun, classy, casual afternoon with good friends and family!</p>
+
+			<h3>Additional Information</h3>
+			<p>Please call, text or email us with any questions, comments or special requests!</p>
+
 		</div>
 
-		<div class="box">
+		<!-- <div class="box">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.228755178208!2d-120.09830624829598!3d34.648925393399416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e955b1306f8a51%3A0xfb7fc78c8c5710ae!2sRoblar+Winery!5e0!3m2!1sen!2sus!4v1514301800318" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
-		</div>
+		</div> -->
 		
 
 	</div>
 
 
 	<div class="section" id="section4">
-		
-	<h2>Contact & RSVP & REGISTRY</h2>
 
 	<div class="box">
 		<h2>RSVP</h2>
 
-		<form netlify class="form-horizontal">
-		<fieldset>
+		<form netlify>
 
-		<!-- Form Name -->
-		<legend>Form Name</legend>
+			<!-- Text input-->
+			<div class="form-group">
+			  
+			  <input id="name" name="name" type="text" autocomplete="off" placeholder="Name" class="form-control input-md" required="">
+			    
+			</div>
+			&nbsp;
+			<div class="form-group">
+				<input type="radio" name="rsvp" value="accept"> Count us in!<br>
+			</div>
+			<div class="form-group">
+				<input type="radio" name="rsvp" value="decline"> We can't make it :(<br>
+			</div>
+			&nbsp;
 
-		<!-- Text input-->
-		<div class="form-group">
-		  <label class="col-md-4 control-label" for="name">Name</label>  
-		  <div class="col-md-4">
-		  <input id="name" name="name" type="text" placeholder="Name" class="form-control input-md" required="">
-		    
-		  </div>
-		</div>
 
-		<!-- Select Basic -->
-		<div class="form-group">
-		  <label class="col-md-4 control-label" for="acceptdecline">Accept/Decline</label>
-		  <div class="col-md-4">
-		    <select id="acceptdecline" name="acceptdecline" class="form-control">
-		      <option value="accept">We'll see you there!</option>
-		      <option value="decline">We won't be able to make it.</option>
-		    </select>
-		  </div>
-		</div>
+			
 
-		<!-- Text input-->
-		<div class="form-group">
-		  <label class="col-md-4 control-label" for="adults">Adults Attending</label>  
-		  <div class="col-md-4">
-		  <input id="adults" name="adults" type="text" placeholder="Adults attending" class="form-control input-md">
-		    
-		  </div>
-		</div>
+			<!-- Text input-->
+			<div class="form-group">
+			 
+			  <input id="adults" name="adults" type="text" autocomplete="off" placeholder="Adults attending" class="form-control input-md">
+			    
+			</div>
 
-		<!-- Text input-->
-		<div class="form-group">
-		  <label class="col-md-4 control-label" for="kids">Kids Attending</label>  
-		  <div class="col-md-4">
-		  <input id="kids" name="kids" type="text" placeholder="Kids attending" class="form-control input-md">
-		    
-		  </div>
-		</div>
+			<!-- Text input-->
+			<div class="form-group">
+		
+			  <input id="kids" name="kids" type="text" autocomplete="off" placeholder="Kids attending" class="form-control input-md">
+			    
+			</div>
 
-		<!-- Textarea -->
-		<div class="form-group">
-		  <label class="col-md-4 control-label" for="message">Message</label>
-		  <div class="col-md-4">                     
-		    <textarea class="form-control" id="message" name="message">Message</textarea>
-		  </div>
-		</div>
+			<!-- Textarea -->
+			<div class="form-group">
+			                    
+			    <textarea class="form-control" id="message" name="message" autocomplete="off" placeholder="Message"></textarea>
+			</div>
 
-		<!-- Button -->
-		<div class="form-group">
-		  <label class="col-md-4 control-label" for="submit">Submit</label>
-		  <div class="col-md-4">
-		    <button id="submit" name="submit" class="btn btn-primary">Submit</button>
-		  </div>
-		</div>
+			<!-- Button -->
+			<div class="form-group">
+			  
+			    <button id="submit" name="submit" class="button">Submit</button>
+			</div>
 
-		</fieldset>
+	
 		</form>
+
+		<hr>
+
+		<h2>Registry</h2>
+		<p>We are registered at <a href="https://www.babylist.com/baby-noel-duncan-shea">Babylist</a>.</p>
 
 	</div>
 	
